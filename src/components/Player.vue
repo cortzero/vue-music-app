@@ -37,7 +37,7 @@ export default {
      * El método $emit('nombre-evento', objeto-a-enviar-con-el-evento) los emite
      * Se ejecuta de manera asicrónica: cada vez que ocurra el evento 'set-track' se ejecuta este código
      */
-    //this.$bus.$on('set-track', (track) => { this.track = track; })
+    this.$bus.$on('set-track', (track) => { this.$store.state.track = track; })
   }
 }
 </script>
